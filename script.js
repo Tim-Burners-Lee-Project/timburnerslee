@@ -1,11 +1,19 @@
 let slideIndex = 0;
 
-function nextSlide() {
+function showSlide(index) {
     let slides = document.querySelectorAll(".slide");
-    
-    slides[slideIndex].classList.remove("active");
-    
-    slideIndex = (slideIndex + 1) % slides.length;
-    
+
+    slides.forEach(slide => slide.classList.remove("active"));
+
+    slideIndex = (index + slides.length) % slides.length;
+
     slides[slideIndex].classList.add("active");
+}
+
+function nextSlide() {
+    showSlide(slideIndex + 1);
+}
+
+function prevSlide() {
+    showSlide(slideIndex - 1);
 }
