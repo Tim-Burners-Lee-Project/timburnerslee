@@ -7,30 +7,42 @@
 </head>
 <body>
 
-<h1>What Can a Website Do?</h1>
+<header>
+    <nav>
+        <h2>My Website</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="page2.html">Tim Berners-Lee</a>
+            <a href="page3.html">Today</a>
+        </div>
+    </nav>
+</header>
 
-<div class="slideshow">
-    <div class="slide active">
-        <img src="https://via.placeholder.com/600x300">
-        <p>Websites can share information with people all over the world.</p>
+<section class="slide active" style="background-image: url('https://via.placeholder.com/1200x800');">
+    <div class="content">
+        <h1>What Can a Website Do?</h1>
+        <p>Websites allow people to share information worldwide.</p>
     </div>
+</section>
 
-    <div class="slide">
-        <img src="https://via.placeholder.com/600x300">
-        <p>They allow communication through chats, emails, and social media.</p>
+<section class="slide" style="background-image: url('https://via.placeholder.com/1200x800');">
+    <div class="content">
+        <h1>Communication</h1>
+        <p>Chat, email, and social media connect people instantly.</p>
     </div>
+</section>
 
-    <div class="slide">
-        <img src="https://via.placeholder.com/600x300">
-        <p>You can watch videos, play games, and learn new things.</p>
+<section class="slide" style="background-image: url('https://via.placeholder.com/1200x800');">
+    <div class="content">
+        <h1>Entertainment & Learning</h1>
+        <p>Videos, games, and education are all online.</p>
     </div>
+</section>
+
+<div class="controls">
+    <button onclick="prevSlide()">←</button>
+    <button onclick="nextSlide()">→</button>
 </div>
-
-<button onclick="nextSlide()">Next</button>
-
-<nav>
-    <a href="page2.html">Next Page →</a>
-</nav>
 
 <script src="script.js"></script>
 </body>
