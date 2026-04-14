@@ -1,35 +1,73 @@
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
+    color: white;
 }
 
-.slideshow {
-    position: relative;
-    width: 600px;
-    margin: auto;
+/* NAVBAR */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* SLIDES */
 .slide {
+    height: 100vh;
     display: none;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .slide.active {
-    display: block;
+    display: flex;
 }
 
-img {
+/* DARK OVERLAY */
+.slide::before {
+    content: "";
+    position: absolute;
     width: 100%;
-    border-radius: 10px;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+/* CONTROLS */
+.controls {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 button {
-    margin-top: 10px;
     padding: 10px 20px;
-}
-
-nav a {
-    margin: 20px;
-    text-decoration: none;
-    font-weight: bold;
+    margin: 5px;
+    font-size: 18px;
 }
