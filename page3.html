@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>How Websites Work</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+<h2>My Website</h2>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="page2.html">Tim Berners-Lee</a>
+<a href="page3.html" style="background: rgba(255,255,255,0.3);">How It Works</a>
+<a href="page4.html">Today</a>
+
+</div>
+</nav>
+</header>
+
+<section class="slide active">
+<div class="content">
+<h1>How Do Websites Work?</h1>
+<p>Websites may seem simple, but behind the scenes they rely on communication between computers across the internet.</p>
+</div>
+</section>
+
+<section class="slide">
+<div class="content">
+<h1>Step 1: The Request</h1>
+<p>When you type a web address into your browser, your computer sends a request over the internet to a server. The server is a powerful computer that stores website files.</p>
+</div>
+</section>
+
+<section class="slide">
+<div class="content">
+<h1>Step 2: The Server</h1>
+<p>The server receives the request and finds the correct files for the website. These files include HTML, CSS, and JavaScript, which control the structure, style, and behaviour of the page.</p>
+</div>
+</section>
+
+<section class="slide">
+<div class="content">
+<h1>Step 3: The Response</h1>
+<p>The server sends these files back to your browser. This happens extremely quickly, often in less than a second.</p>
+</div>
+</section>
+
+<section class="slide">
+<div class="content">
+<h1>Step 4: Rendering</h1>
+<p>Your browser reads the files and builds the website you see on screen. HTML creates the layout, CSS adds design, and JavaScript makes it interactive.</p>
+</div>
+</section>
+
+<section class="slide">
+<div class="content">
+<h1>Behind the Scenes</h1>
+<p>This entire process happens every time you visit a website. It allows billions of devices around the world to access and share information instantly.</p>
+</div>
+</section>
+
+<section class="slide">
+<div class="content">
+<h1>Why It Matters</h1>
+<p>Understanding how websites work helps explain how the internet connects people globally and supports everything from communication to online services.</p>
+</div>
+</section>
+
+<div class="controls">
+<button onclick="prevSlide()">←</button>
+<button onclick="nextSlide()">→</button>
+</div>
+
+<div class="dots">
+<span class="dot" onclick="currentSlide(0)"></span>
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
