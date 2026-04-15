@@ -18,72 +18,111 @@
 </nav>
 </header>
 
+<!-- INTRO -->
 <section class="slide active">
 <div class="content">
 <h1>What Can a Website Do?</h1>
-<p>Websites are powerful tools used every day to share, connect, and provide services worldwide.</p>
+<p>Websites are interactive tools that allow people to share information, communicate, and use services.</p>
+<p>They are a huge part of everyday life, from education to entertainment and business.</p>
 </div>
 </section>
 
+<!-- INFORMATION -->
 <section class="slide">
 <div class="content">
 <h1>Sharing Information</h1>
-<p>Websites allow instant access to knowledge.</p>
-<p>Examples include news, school resources, and tutorials.</p>
-<p>This makes learning faster and more accessible.</p>
+<p>Websites can display text, images, and data instantly.</p>
+<p>This allows people to learn new things, read news, and access resources from anywhere.</p>
+<p>For example, online encyclopedias and news sites are used daily by millions of people.</p>
 </div>
 </section>
 
+<!-- AUDIO DEMO -->
 <section class="slide">
 <div class="content">
-<h1>Global Communication</h1>
-<p>People can communicate instantly across the world.</p>
-<p>Email, messaging apps, and video calls all rely on websites.</p>
-<p>This has made the world more connected than ever.</p>
+<h1>Playing Audio</h1>
+<p>Websites can play sound such as music, podcasts, or sound effects.</p>
+<p>This is used in streaming platforms and games.</p>
+
+<audio controls>
+<source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+Your browser does not support audio.
+</audio>
+
+<p>You can press play to hear an example.</p>
 </div>
 </section>
 
+<!-- VIDEO DEMO -->
 <section class="slide">
 <div class="content">
-<h1>Entertainment</h1>
-<p>Websites provide videos, music, and games.</p>
-<p>Streaming services and online gaming are hugely popular.</p>
-<p>Entertainment is now available anytime, anywhere.</p>
+<h1>Playing Video</h1>
+<p>Websites can stream videos for entertainment and education.</p>
+
+<video width="300" controls>
+<source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+</video>
+
+<p>This is how platforms like YouTube work.</p>
 </div>
 </section>
 
+<!-- USER INPUT -->
+<section class="slide">
+<div class="content">
+<h1>User Input</h1>
+<p>Websites can take input from users, such as forms and searches.</p>
+
+<input type="text" id="nameInput" placeholder="Enter your name">
+<button onclick="showMessage()">Submit</button>
+
+<p id="output"></p>
+
+<p>This is used for login systems, searches, and surveys.</p>
+</div>
+</section>
+
+<!-- INTERACTION -->
+<section class="slide">
+<div class="content">
+<h1>Interactivity</h1>
+<p>Websites respond to user actions like clicks and scrolling.</p>
+
+<button onclick="changeColour()">Click Me</button>
+
+<p id="colourText">Watch this text change colour!</p>
+
+<p>This makes websites dynamic and engaging.</p>
+</div>
+</section>
+
+<!-- SERVICES -->
 <section class="slide">
 <div class="content">
 <h1>Online Services</h1>
-<p>You can shop, book tickets, and manage money online.</p>
-<p>Businesses use websites to sell products and services.</p>
-<p>This has changed how people shop and interact with companies.</p>
+<p>Websites allow people to shop, book tickets, and manage money.</p>
+<p>Businesses use websites to sell products and connect with customers.</p>
+<p>This has transformed how people interact with companies.</p>
 </div>
 </section>
 
-<section class="slide">
-<div class="content">
-<h1>Education</h1>
-<p>Online courses and learning platforms are widely used.</p>
-<p>Students can learn from anywhere in the world.</p>
-<p>Education is no longer limited to classrooms.</p>
-</div>
-</section>
-
+<!-- SUMMARY -->
 <section class="slide">
 <div class="content">
 <h1>Why It Matters</h1>
-<p>Websites are essential in modern life.</p>
-<p>They influence communication, business, and learning.</p>
-<p>Almost everything today involves the web in some way.</p>
+<p>Websites combine information, media, and interaction in one place.</p>
+<p>They are essential for communication, learning, and daily life.</p>
+<p>As technology improves, websites continue to become more powerful.</p>
 </div>
 </section>
 
+<!-- CONTROLS -->
 <div class="controls">
 <button onclick="prevSlide()">←</button>
 <button onclick="nextSlide()">→</button>
 </div>
 
+<!-- DOTS -->
 <div class="dots">
 <span class="dot" onclick="currentSlide(0)"></span>
 <span class="dot" onclick="currentSlide(1)"></span>
@@ -92,8 +131,24 @@
 <span class="dot" onclick="currentSlide(4)"></span>
 <span class="dot" onclick="currentSlide(5)"></span>
 <span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
 </div>
 
 <script src="script.js"></script>
+
+<script>
+// INPUT DEMO
+function showMessage() {
+    let name = document.getElementById("nameInput").value;
+    document.getElementById("output").innerText = "Hello, " + name + "!";
+}
+
+// INTERACTION DEMO
+function changeColour() {
+    let text = document.getElementById("colourText");
+    text.style.color = text.style.color === "yellow" ? "white" : "yellow";
+}
+</script>
+
 </body>
 </html>
