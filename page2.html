@@ -1,47 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Tim Berners-Lee</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Tim Berners-Lee</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <nav>
-        <h2>My Website</h2>
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="page2.html">Tim Berners-Lee</a>
-            <a href="page3.html">Today</a>
-        </div>
-    </nav>
+<nav>
+<h2>My Website</h2>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="page2.html" style="background: rgba(255,255,255,0.3);">Tim Berners-Lee</a>
+<a href="page3.html">Today</a>
+</div>
+</nav>
 </header>
 
-<section class="slide active" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d2/Tim_Berners-Lee.jpg');">
-    <div class="content">
-        <h1>Tim Berners-Lee</h1>
-        <p>Born in 1955 in London.</p>
-    </div>
+<section class="slide active">
+<div class="content">
+<h1>Tim Berners-Lee</h1>
+<p>A British computer scientist born in 1955 in London.</p>
+</div>
 </section>
 
-<section class="slide" style="background-image: url('https://via.placeholder.com/1200x800');">
-    <div class="content">
-        <h1>The Invention</h1>
-        <p>He created the World Wide Web in 1989.</p>
-    </div>
+<section class="slide">
+<div class="content">
+<h1>Early Life</h1>
+<p>He studied physics at Oxford University.</p>
+<p>He was interested in computers and how they share information.</p>
+</div>
 </section>
 
-<section class="slide" style="background-image: url('https://via.placeholder.com/1200x800');">
-    <div class="content">
-        <h1>Impact</h1>
-        <p>The web changed how the world shares information.</p>
-    </div>
+<section class="slide">
+<div class="content">
+<h1>The Problem</h1>
+<p>Scientists around the world struggled to share data easily.</p>
+<p>Different computers could not communicate well.</p>
+</div>
+</section>
+
+<section class="slide">
+<div class="content">
+<h1>The Solution</h1>
+<p>In 1989, he proposed a system to link documents together.</p>
+<p>This idea became the World Wide Web.</p>
+</div>
+</section>
+
+<section class="slide">
+<div class="content">
+<h1>Key Technologies</h1>
+<p>HTML – structure of web pages</p>
+<p>URL – addresses for pages</p>
+<p>HTTP – communication between computers</p>
+</div>
+</section>
+
+<section class="slide">
+<div class="content">
+<h1>First Website</h1>
+<p>The first website was created in 1991.</p>
+<p>It explained how the web worked.</p>
+</div>
+</section>
+
+<section class="slide">
+<div class="content">
+<h1>Impact</h1>
+<p>The web changed communication worldwide.</p>
+<p>It allowed instant access to information.</p>
+<p>It helped create the modern internet.</p>
+</div>
+</section>
+
+<section class="slide">
+<div class="content">
+<h1>Important Choice</h1>
+<p>He made the web free for everyone.</p>
+<p>This allowed it to grow rapidly across the world.</p>
+</div>
 </section>
 
 <div class="controls">
-    <button onclick="prevSlide()">←</button>
-    <button onclick="nextSlide()">→</button>
+<button onclick="prevSlide()">←</button>
+<button onclick="nextSlide()">→</button>
+</div>
+
+<div class="dots">
+<span class="dot" onclick="currentSlide(0)"></span>
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
 </div>
 
 <script src="script.js"></script>
